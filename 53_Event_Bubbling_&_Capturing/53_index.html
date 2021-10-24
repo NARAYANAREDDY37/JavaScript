@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Event Bubbling & Capturing</title>
+
+    <style>
+      div {
+        min-width: 100px;
+        min-height: 100px;
+        padding: 30px;
+        border: 1px solid black;
+        margin: 20px;
+      }
+      #grand-parent{
+        background-color: blue;
+      }
+      #parent{
+        background-color: white;
+      }
+      #child{
+        background-color: green;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Event Bubbling & Capturing</a>
+    </nav>
+
+    <div id="grand-parent">
+      <div id="parent">
+        <div id="child">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="53_Event_Bubbling&Capturing.js"></script>
+  </body>
+</html>
